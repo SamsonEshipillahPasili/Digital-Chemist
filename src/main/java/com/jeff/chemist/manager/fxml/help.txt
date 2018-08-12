@@ -1,0 +1,70 @@
+pointOfSalePane, homePane, settingsPane, inventoryControlPane
+
+homeBtn, pointOfSaleBtn, inventoryControlBtn, stockReportBtn, salesReportBtn, settingsBtn
+
+
+com.jeff.chemist.manager.controllers.DashboardController
+
+
+
+Settings controller
+-------------------------
+updateNameField, updateUsernameField
+
+oldPaswordField, newPasswordField, confirmPasswordField
+
+updateNameBtn, updatePasswordBtn, selectImageBtn, updateImageBtn
+
+displayCurrentImageView
+
+com.jeff.chemist.manager.controllers.SettingsController
+
+
+Inventory Control controller 
+------------------------------
+inventoryControlImageView
+
+codesTextArea
+
+nameCBox
+
+priceField, nameField
+
+addItemsBtn
+
+productTable
+
+codeColumn,nameColumn,priceColumn,dosageColumn, deleteColumn
+
+
+Point of Sale Controller
+--------------------------------------------------------
+itemCodeSearch
+
+drugTable, saleTable
+
+codeColumn, nameColumn, priceColumn, dosageColumn, selectItemColumn
+
+
+saleIDColumn, saleNameColumn, salePriceColumn, saleRemoveColumn
+
+
+totalSaleField, cashTenderedField, changeField
+
+cancelSaleBtn, completeSaleBtn
+
+
+Reports Controller
+----------------------------------
+fromDateCBox, toDateCBox
+
+generateSalesReportRange, generateTodaysSalesReport, generateInventoryReport
+
+backgroundImageView
+
+Home Controller
+---------------------
+mainHeader, welcomeText
+
+
+

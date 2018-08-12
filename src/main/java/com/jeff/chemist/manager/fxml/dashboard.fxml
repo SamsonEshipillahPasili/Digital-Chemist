@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="997.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jeff.chemist.manager.controllers.DashboardController">
+   <children>
+      <Pane layoutX="133.0" prefHeight="66.0" prefWidth="870.0" style="-fx-background-color: rgba(0,0,0,0.1);">
+         <children>
+            <Label layoutX="244.0" layoutY="18.0" prefHeight="30.0" prefWidth="230.0" style="-fx-font-weight: bold; -fx-font-family: Serif;" text="Digital Chemist" textFill="#033f03">
+               <font>
+                  <Font size="25.0" />
+               </font></Label>
+            <JFXButton fx:id="logOutBtn" layoutX="640.0" layoutY="35.0" pickOnBounds="false" prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: rgba(150,7,7,0.1);" text="Log Out" textFill="#960707" />
+            <Label fx:id="loggedInAsLabel" layoutX="640.0" layoutY="10.0" prefHeight="16.0" prefWidth="230.0" text="Logged In As:  Samson" textFill="#2c7215" />
+         </children>
+      </Pane>
+      <AnchorPane layoutX="136.0" layoutY="65.0" prefHeight="587.0" prefWidth="870.0" style="-fx-background-color: transparent;">
+         <children>
+            <fx:include fx:id="settingsPane" source="settings.fxml" />
+            <fx:include fx:id="inventoryControlPane" source="inventory_control.fxml" />
+            <fx:include fx:id="pointOfSalePane" source="point_of_sale.fxml" />
+            <fx:include fx:id="reportsPane" source="reports.fxml" />
+             <Pane fx:id="homePane" prefHeight="610.0" prefWidth="870.0">
+                 <children>
+                     <ImageView fx:id="backgroundImage" fitHeight="552.0" fitWidth="870.0" layoutX="-7.0" pickOnBounds="true">
+                         <image>
+                             <Image url="@img/log_in.jpg" />
+                         </image>
+                     </ImageView>
+                     <Label fx:id="welcomeText" alignment="CENTER" layoutX="15.0" layoutY="305.0" prefHeight="30.0" prefWidth="855.0" text="Welcome Jeff" textFill="WHITE">
+                         <font>
+                             <Font size="25.0" />
+                         </font>
+                     </Label>
+                  <Label fx:id="mainHeader" alignment="CENTER" layoutX="8.0" layoutY="67.0" prefHeight="30.0" prefWidth="855.0" style="-fx-font-size: 50px; -fx-font-weight: bold;" text="Digital Chemist" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                 </children>
+             </Pane>
+         </children>
+      </AnchorPane>
+      <VBox layoutX="-6.0" prefHeight="610.0" prefWidth="136.0" style="-fx-background-color: rgb(3,63,3);">
+         <children>
+            <JFXButton fx:id="homeBtn" prefHeight="45.0" prefWidth="131.0" style="-fx-border-bottom-width: 5px;" text="Home" textFill="WHITE" />
+            <JFXButton fx:id="pointOfSaleBtn" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="132.0" text="Point of Sale" textFill="WHITE" />
+            <JFXButton fx:id="inventoryControlBtn" layoutX="10.0" layoutY="55.0" prefHeight="45.0" prefWidth="135.0" text="Inventory Control" textFill="WHITE" />
+            <JFXButton fx:id="settingsBtn" layoutX="10.0" layoutY="190.0" prefHeight="45.0" prefWidth="135.0" text="Settings" textFill="WHITE" />
+            <JFXButton fx:id="reportsBtn" layoutX="10.0" layoutY="145.0" prefHeight="45.0" prefWidth="135.0" text="Reports" textFill="WHITE" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </VBox>
+       
+
+   </children>
+</AnchorPane>

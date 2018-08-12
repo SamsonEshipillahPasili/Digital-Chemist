@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Jul 29 04:51:03 EDT 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.1.0 - (1808820): instance a816c00e-0164-e53b-dc49-00000689ba58 
+on database directory /media/eshipillah/lubuntu/jeff/chemist-manager/db_chemist with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Loaded from file:/home/eshipillah/.m2/repository/org/apache/derby/derby/10.14.1.0/derby-10.14.1.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12
+user.dir=/media/eshipillah/lubuntu/jeff/chemist-manager
+os.name=Linux
+os.arch=amd64
+os.version=4.8.0-53-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

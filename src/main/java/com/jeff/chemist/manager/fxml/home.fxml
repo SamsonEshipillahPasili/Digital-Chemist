@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+     <AnchorPane layoutX="133.0" layoutY="66.0" prefHeight="544.0" prefWidth="829.0">
+         <children>
+            <ImageView fitHeight="544.0" fitWidth="864.0" pickOnBounds="true">
+               <image>
+                  <Image url="@img/log_in.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="287.0" layoutY="23.0" prefHeight="30.0" prefWidth="363.0" text="Welcome Samson Eshipillah" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="98.0" layoutY="76.0" opacity="0.95" prefHeight="392.0" prefWidth="678.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="233.0" layoutY="25.0" prefHeight="25.0" prefWidth="243.0" text="Today at a glance ... " textFill="#094a08">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TableView layoutX="41.0" layoutY="58.0" prefHeight="304.0" prefWidth="598.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="ID" />
+                      <TableColumn prefWidth="113.0" text="Category" />
+                        <TableColumn prefWidth="135.0" text="Totals" />
+                        <TableColumn prefWidth="305.0" text="Comments" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <JFXButton layoutX="98.0" layoutY="484.0" prefHeight="38.0" prefWidth="330.0" style="-fx-background-color: rgb(148,38,25);" text="Stock Report" textFill="WHITE" />
+            <JFXButton layoutX="469.0" layoutY="484.0" prefHeight="38.0" prefWidth="312.0" style="-fx-background-color: rgb(148,38,25);" text="Sales Report" textFill="WHITE" />
+         </children>
+      </AnchorPane>
